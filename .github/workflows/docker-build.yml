@@ -45,12 +45,12 @@ jobs:
           docker build -t $REPOSITORY_URI:$SANITIZED_IMAGE_TAG .
           docker push $REPOSITORY_URI:$SANITIZED_IMAGE_TAG
 
-      # Step 5: Deploy to ECS
-      - name: Deploy to ECS
-        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-        with:
-          task-definition: ecs-task-definition.json  # Path to your ECS task definition file
-          service: ${{ secrets.ECS_SERVICE_NAME }}
-          cluster: ${{ secrets.ECS_CLUSTER_NAME }}
-          image: ${{ secrets.ECR_REPOSITORY_URI }}:${{ github.sha }}
-          wait-for-service-stability: true
+      # # Step 5: Deploy to ECS
+      # - name: Deploy to ECS
+      #   uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+      #   with:
+      #     task-definition: ecs-task-definition.json  # Path to your ECS task definition file
+      #     service: ${{ secrets.ECS_SERVICE_NAME }}
+      #     cluster: ${{ secrets.ECS_CLUSTER_NAME }}
+      #     image: ${{ secrets.ECR_REPOSITORY_URI }}:${{ github.sha }}
+      #     wait-for-service-stability: true
