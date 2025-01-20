@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmaster Application - Visuals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .image-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container div {
+            width: 250px;
+        }
+
+        .image-container div img {
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container div img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Taskmaster Application - Visual Overview</h1>
+    <p>Below are the images used in this application to illustrate different concepts and diagrams.</p>
+
+    <div class="image-container">
+        <!-- Image 1 -->
+        <div>
+            <img src="/images/dto2.webp" alt="DTO Diagram 2">
+            <p>DTO Diagram 2</p>
+        </div>
+
+        <!-- Image 2 -->
+        <div>
+            <img src="/images/dtoimage.jpg" alt="DTO Image">
+            <p>DTO Image</p>
+        </div>
+
+        <!-- Image 3 -->
+        <div>
+            <img src="/images/dtosequencediagram.webp" alt="DTO Sequence Diagram">
+            <p>DTO Sequence Diagram</p>
+        </div>
+
+        <!-- Image 4 -->
+        <div>
+            <img src="/images/package_by_feature.png" alt="Package by Feature">
+            <p>Package by Feature</p>
+        </div>
+
+        <!-- Image 5 -->
+        <div>
+            <img src="/images/package_by_layer.png" alt="Package by Layer">
+            <p>Package by Layer</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Taskmaster Application | All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
