@@ -45,7 +45,7 @@ jobs:
           docker build -t $REPOSITORY_URI:$SANITIZED_IMAGE_TAG .
           docker push $REPOSITORY_URI:$SANITIZED_IMAGE_TAG
 
-      # # Step 5: Deploy to ECS
+      #   Step 5: Deploy to ECS
       # - name: Deploy to ECS
       #   uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       #   with:
